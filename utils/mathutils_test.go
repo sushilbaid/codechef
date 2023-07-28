@@ -3,6 +3,7 @@ package utils
 import (
 	"fmt"
 	"testing"
+	"time"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -125,4 +126,11 @@ func TestGeneratePrimes(t *testing.T) {
 			a.Equal(tt.result, r)
 		})
 	}
+	t.Run("generateprimes(1m)", func(t *testing.T) {
+		a := assert.New(t)
+		r, tm := m.GeneratePrimes(1000 * 1000)
+		a.Equal(78498, len(r))
+		a.Equal(999983, r[len(r)-1])
+		a.Less(tm, time.Duration(100)*time.Millisecond)
+	})
 }
