@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func diet() {
 	reader := bufio.NewReader(os.Stdin)
 	// writer := bufio.NewWriter(os.Stdout)
 	var count int
