@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func anudtc() {
 	reader := bufio.NewReader(os.Stdin)
 	// writer := bufio.NewWriter(os.Stdout)
 	var count int
