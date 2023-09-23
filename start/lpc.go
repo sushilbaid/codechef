@@ -2,12 +2,15 @@ package main
 
 import (
 	"bufio"
+	"codechef/utils"
 	"fmt"
 	"os"
 	"strings"
 )
 
 func lpc() {
+	ml := utils.NewMathLib()
+	abs, minint := ml.Abs, ml.MinInt
 	reader := bufio.NewReader(os.Stdin)
 	count := 1
 	fmt.Fscanln(reader, &count)
@@ -37,21 +40,4 @@ func lpc() {
 		}
 		fmt.Println(min)
 	}
-}
-
-// abs return absolute value of a
-func abs(a int) int {
-	result := a
-	if a < 0 {
-		result = -a
-	}
-	return result
-}
-
-func minint(a, b int) int {
-	result := a
-	if b < a {
-		result = b
-	}
-	return result
 }
