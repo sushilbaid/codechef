@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func repeat() {
 	reader := bufio.NewReader(os.Stdin)
 	count := 1
 	fmt.Fscanln(reader, &count)
