@@ -7,7 +7,7 @@ import (
 	"sort"
 )
 
-func main() {
+func warriorchef() {
 	reader := bufio.NewReader(os.Stdin)
 	count := 1
 	fmt.Fscanln(reader, &count)
