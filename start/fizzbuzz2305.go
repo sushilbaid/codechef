@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func fizzbuzz2305() {
 	reader := bufio.NewReader(os.Stdin)
 	count := 1
 	fmt.Fscanln(reader, &count)
